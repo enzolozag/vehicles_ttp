@@ -1,45 +1,73 @@
-Vehicle Data Analysis and Visualization
+# Análisis y Visualización de Datos de Vehículos
 
-Project Overview
-This project provides a web application for analyzing and visualizing vehicle advertisements data. Users can explore various aspects of the dataset, such as pricing trends, distributions, and correlations, through interactive charts and graphs.
+## Descripción del Proyecto
+Este proyecto proporciona una aplicación web para analizar y visualizar datos de anuncios de vehículos. Los usuarios pueden explorar varios aspectos del conjunto de datos, como tendencias de precios, distribuciones y correlaciones, a través de gráficos interactivos. 
 
-Features
-Interactive Histograms: Visualize the distribution of data with options for normalization.
-Scatter Plots: Explore relationships between two numerical variables.
-Bar Charts: Compare categorical data such as manufacturers or fuel types.
+Puedes acceder a la aplicación desplegada [aquí](https://vehicles-ttp.onrender.com/).
 
-Visualizations
-1. Histograms
- <!-- Replace with actual path -->
+## Funcionalidades
+* **Histogramas Interactivos**:<br>Visualiza la distribución de datos con opciones para normalización.
+* **Gráficos de Dispersión**:<br>Explora relaciones entre dos variables numéricas.
+* **Gráficos de Barras**:<br>Compara datos categóricos como fabricantes o tipos de combustible.
 
-Visualize the distribution of numerical data. You can normalize the histogram to show proportions.
+## Visualizaciones
+1. **Histogramas**<br>
+   Visualiza la distribución de datos numéricos. Puedes normalizar el histograma para mostrar proporciones.
 
-2. Scatter Plots
- <!-- Replace with actual path -->
+2. **Gráficos de Dispersión**<br>
+   Explora la relación entre dos variables numéricas.
 
-Explore the relationship between two numerical variables.
+3. **Gráficos de Barras**<br>
+   Compara diferentes categorías, como tipos de vehículos o tipos de combustible.
 
-3. Bar Charts
- <!-- Replace with actual path -->
+## Configuración
+* **Diseño de la Página**: La aplicación utiliza un diseño ancho para una mejor visualización de los gráficos.
+* **Título e Icono de la Página**: Personaliza el título y el icono editando `st.set_page_config` en `app.py`.
 
-Compare different categories, such as vehicle types or fuel types.
+## Datos
+El conjunto de datos utilizado en este proyecto es `vehicles_us.csv`, que contiene las siguientes columnas:
 
-Configuration
-Page Layout: The app uses a wide layout for better display of charts.
-Page Title and Icon: Customize the title and icon by editing the st.set_page_config in app.py.
-Data
-The dataset used in this project is vehicles_us.csv, which contains the following columns:
+* **price**: Precio del vehículo.
+* **model_year**: Año en que se fabricó el modelo del vehículo.
+* **model**: Modelo del vehículo.
+* **condition**: Estado del vehículo (e.g., nuevo, usado).
+* **cylinders**: Número de cilindros en el motor del vehículo.
+* **fuel**: Tipo de combustible que utiliza el vehículo.
+* **odometer**: Distancia que ha recorrido el vehículo.
+* **transmission**: Tipo de transmisión (e.g., manual, automática).
+* **type**: Tipo de vehículo (e.g., sedán, SUV).
+* **paint_color**: Color del vehículo.
+* **is_4wd**: Indica si el vehículo tiene tracción en las cuatro ruedas.
+* **date_posted**: Fecha en que se publicó el anuncio del vehículo.
+* **days_listed**: Número de días que el vehículo estuvo listado antes de ser vendido o retirado.
 
-price: Price of the vehicle.
-model_year: Year the vehicle model was manufactured.
-model: Model of the vehicle.
-condition: Condition of the vehicle (e.g., new, used).
-cylinders: Number of cylinders in the vehicle's engine.
-fuel: Type of fuel the vehicle uses.
-odometer: Distance the vehicle has traveled.
-transmission: Type of transmission (e.g., manual, automatic).
-type: Type of vehicle (e.g., sedan, SUV).
-paint_color: Color of the vehicle.
-is_4wd: Indicates if the vehicle has four-wheel drive.
-date_posted: Date when the vehicle ad was posted.
-days_listed: Number of days the vehicle was listed before it was sold or removed.
+## Estructura del Proyecto
+
+El repositorio contiene los siguientes archivos:
+
+├── .gitignore<br>
+├── .streamlit<br>
+│   └── config.toml<br>
+├── Notebooks<br>
+│   └── EDA.ipynb<br>
+├── README.md<br>
+├── app.py<br>
+├── requirements.txt<br>
+└── vehicles_us.csv<br>
+
+
+- `.gitignore`: Lista de archivos y carpetas que Git debe ignorar.
+- `.streamlit/config.toml`: Archivo de configuración para Streamlit.
+- `Notebooks/EDA.ipynb`: Notebook de Jupyter para Análisis Exploratorio de Datos.
+- `README.md`: Archivo de descripción del proyecto.
+- `app.py`: Código principal de la aplicación Streamlit.
+- `requirements.txt`: Archivo que contiene las dependencias del proyecto.
+- `vehicles_us.csv`: Conjunto de datos utilizado en el análisis.
+
+## Uso
+1. **Acceso a la Aplicación**: Visita la aplicación en [este enlace](https://vehicles-ttp.onrender.com/).
+2. **Instalar Dependencias**: Si deseas ejecutar la aplicación localmente, usa `pip install -r requirements.txt` para instalar todas las dependencias necesarias.
+3. **Ejecutar la Aplicación**: Usa el comando `streamlit run app.py` para iniciar la aplicación web localmente.
+
+   
+
